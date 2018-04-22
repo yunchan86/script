@@ -1,3 +1,11 @@
 ./mongoimport  -h 127.0.0.1  -d vbox_user -c jd_pro_cate_instruction --type=json  --upsert  --file=/work/admin/data/mongodata/importdata/jd_pro_cate_instruction.json ;
 ./mongoimport  -h 127.0.0.1  -d vbox_user -c jd_product_info --type=json  --upsert  --file=/work/admin/data/mongodata/importdata/jd_product_info.json ;
 ./mongoimport  -h 127.0.0.1  -d vbox_user -c jd_user_and_device --type=json  --upsert  --file=/work/admin/data/mongodata/importdata/jd_user_and_device.json ;
+./mongoimport  -h 127.0.0.1  -d vbox_smart_home -c smartproduct_info --type=json  --upsert  --file=/work/admin/data/mongodata/importdata/smartproduct_info.json ;
+
+mongoexport -h 127.0.0.1 -d vbox_user -c device_and_type --type=json -o /work/admin/device_and_type.json;
+mongoexport -h 127.0.0.1 -d vbox_user -c device__type_and_rec_name --type=json -o /work/admin/device__type_and_rec_name.json;
+mongoexport -h 127.0.0.1 -d vbox_user -c jd_pro_cate_instruction --type=json -o /work/admin/jd_pro_cate_instruction.json;
+mongoexport -h 127.0.0.1 -d vbox_user -c jd_product_info --type=json -o /work/admin/jd_product_info.json;
+mongoexport -h 127.0.0.1 -d vbox_user -c jd_user_and_device --type=json -o /work/admin/jd_user_and_device.json;
+mongoexport -h 127.0.0.1 -d vbox_smart_home -c smartproduct_info --type=json -o /work/admin/smartproduct_info.json;
