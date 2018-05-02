@@ -31,5 +31,11 @@ rem call nimitz-flow-stock.bat
 call nimitz-flow-translation.bat
 call nimitz-flow-userchat.bat
 
+call nimitz-dispatch.bat
+call nimitz-gateway.bat
+call nimitz-push.bat
+call nimitz-session.bat
+
+
 
 
