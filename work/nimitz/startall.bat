@@ -37,6 +37,8 @@ call nimitz-gateway.bat
 call nimitz-push.bat
 call nimitz-session.bat
 
+pause
+
 
 
 

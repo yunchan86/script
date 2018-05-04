@@ -10,4 +10,4 @@ set session=session
 
 set NIMITZ_PATH=C:\repository\git\project\open_source_server\source\nimitz
 
-set NIMITZ_PATH_DEST=C:\repository\git\otherproject\nimitzdest
+set NIMITZ_PATH_DEST=C:\repository\git\otherproject\nimitz
