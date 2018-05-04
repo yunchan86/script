@@ -1,0 +1,1 @@
+mysqlsla -lt slow slow_query.log>slw.log
