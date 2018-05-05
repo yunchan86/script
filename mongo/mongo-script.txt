@@ -1,0 +1,3 @@
+./mongoimport  -h 127.0.0.1  -d vbox_user -c jd_pro_cate_instruction --type=json  --upsert  --file=/work/admin/data/mongodata/importdata/jd_pro_cate_instruction.json ;
+./mongoimport  -h 127.0.0.1  -d vbox_user -c jd_product_info --type=json  --upsert  --file=/work/admin/data/mongodata/importdata/jd_product_info.json ;
+./mongoimport  -h 127.0.0.1  -d vbox_user -c jd_user_and_device --type=json  --upsert  --file=/work/admin/data/mongodata/importdata/jd_user_and_device.json ;
