@@ -1,0 +1,55 @@
+#!/bin/bash
+# nginx Startup script for the Nginx HTTP Server
+# it is v.0.0.2 version.
+# chkconfig: - 85 15
+# description: Nginx is a high-performance web and proxy server.
+#              It has a lot of features, but it's not for everyone.
+# processname: nginx
+# pidfile: /var/run/nginx.pid
+# config: /usr/local/nginx/conf/nginx.conf
+nginxd=/opt/application/nginx/nginx-1.8.0/sbin/nginx
+nginx_config=/opt/application/nginx/nginx-1.8.0/conf/nginx.conf
+nginx_pid=/opt/application/nginx/nginx-1.8.0/logs/nginx.pid
+RETVAL=0
+prog="nginx"
+echo "nginx is " $nginx_pid
+[ -x $nginxd ] || exit 0
+# Start nginx daemons functions.
+start() {
+if [ -e $nginx_pid ];then
+   echo "nginx already running...."
+   exit 1
+fi
+   $nginxd -c ${nginx_config}
+   echo "nginx has started."
+}
+# Stop nginx daemons functions.
+stop() {
+    $nginxd -s stop
+    echo "nginx has stoped." 
+}
+
+reload() {
+    echo -n $"Reloading $prog: "
+    #kill -HUP `cat ${nginx_pid}`
+    $nginxd -s reload
+}
+# See how we were called.
+case "$1" in
+start)
+        start
+        ;;
+stop)
+        stop
+        ;;
+reload)
+        reload
+        ;;
+restart)
+        stop
+        start
+        ;;
+*)
+        echo $"Usage: $prog {start|stop|restart|reload|help}"
+        exit 1
+esac

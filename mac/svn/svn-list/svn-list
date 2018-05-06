@@ -1,0 +1,23 @@
+U    custom_smhw2015/b2c/view/site/product/basic.html
+A    custom_smhw2015/b2c/view/site/product/tab/intro.html
+U    custom_smhw2015/b2c/view/site/product/index.html
+U    custom_smhw2015/b2c/view/site/product/info/spec.html
+A    custom_smhw2015/b2c/controller/site/mysql.class.php
+A    custom_smhw2015/b2c/controller/site/qrcode.php
+U    custom_smhw2015/b2c/controller/site/gallery.php
+U    custom_smhw2015/b2c/controller/site/product.php
+A    custom_smhw2015/b2c/model/goods.php
+A    custom_smhw2015/b2c/model/products.php
+U    custom_smhw2015/b2c/site.xml
+A    custom_smhw2015/b2c/lib/finder/goods.php
+U    public/app/site/statics/js_mini/shopwidgets.min.js
+U    app/smcoupon/lib/data.php
+U    app/b2c/lib/apiv/apis/response/orders.php
+U    app/base/lib/rpc/service.php
+A    deliver.php
+U    themes/MAX360buy/widgets/other_shanmai_list2/theme_widget_other_shanmai_list2.php
+A    themes/MAX360buy/block/head_public.html
+U    wap_themes/shanmai2015/widgets/index_goods/theme_widget_index_goods.php
+U    wap_themes/shanmai2015/widgets/main_slide/default.html
+A    wap_themes/shanmai2015/widgets/main_slide/default2.html
+Updated to revision 332.

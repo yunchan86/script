@@ -1,0 +1,2 @@
+/public/app/b2c/statics/images/products/zoomin-3.cur
+/public/app/b2c/statics/images/products/zoomout-3.cur

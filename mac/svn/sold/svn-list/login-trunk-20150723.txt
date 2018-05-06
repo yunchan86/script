@@ -1,0 +1,6 @@
+/opt/respository/svn-ecstore/ecstore/trunk/ecstore_online/custom_smhw2015/b2c/controller/site/passport.php
+/opt/respository/svn-ecstore/ecstore/trunk/ecstore_online/custom_smhw2015/b2c/view/site/passport/index.html
+/opt/respository/svn-ecstore/ecstore/trunk/ecstore_online/custom_smhw2015/b2c/view/site/passport/signin/member-signin-new-2.html
+/opt/respository/svn-ecstore/ecstore/trunk/ecstore_online/public/app/b2c/statics/images/signin
+/opt/respository/svn-ecstore/ecstore/trunk/ecstore_online/public/app/b2c/statics/css/signin-new.css
+/opt/respository/svn-ecstore/ecstore/trunk/ecstore_online/public/app/b2c/statics/js_mini/jquery-1.11.3.min.js

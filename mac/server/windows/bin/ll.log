@@ -1,0 +1,19 @@
+
+C:\opt\bin>call "C:\Program Files\Java\jdk1.8.0_20"\bin\java "-Dzookeeper.log.dir=C:\opt\zookeeper\zookeeper\bin\.." "-Dzookeeper.root.logger=INFO,CONSOLE" -cp "C:\opt\zookeeper\zookeeper\bin\..\build\classes;C:\opt\zookeeper\zookeeper\bin\..\build\lib\*;C:\opt\zookeeper\zookeeper\bin\..\*;C:\opt\zookeeper\zookeeper\bin\..\lib\*;C:\opt\zookeeper\zookeeper\bin\..\conf" org.apache.zookeeper.server.quorum.QuorumPeerMain "C:\opt\zookeeper\zookeeper\bin\..\conf\zoo.cfg" start    /opt/zookeeper/zookeeper/conf/zoo.cfg 
+2017-07-16 09:53:47,494 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2017-07-16 09:53:47,498 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2017-07-16 09:53:47,498 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2017-07-16 09:53:47,498 [myid:] - WARN  [main:QuorumPeerMain@113] - Either no config or no quorum defined in config, running  in standalone mode
+2017-07-16 09:53:47,561 [myid:] - ERROR [main:ZooKeeperServerMain@55] - Invalid arguments, exiting abnormally
+java.lang.NumberFormatException: For input string: "C:\opt\zookeeper\zookeeper\bin\..\conf\zoo.cfg"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at org.apache.zookeeper.server.ServerConfig.parse(ServerConfig.java:59)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:84)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.main(ZooKeeperServerMain.java:53)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:116)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:78)
+2017-07-16 09:53:47,564 [myid:] - INFO  [main:ZooKeeperServerMain@56] - Usage: ZooKeeperServerMain configfile | port datadir [ticktime] [maxcnxns]
+
+C:\opt\bin>endlocal

@@ -1,0 +1,8 @@
+/opt/respository/svn-ecstore/ecstore/trunk/ecstore_online/custom_smhw2015/b2c/controller/site/passport.php
+/opt/respository/svn-ecstore/ecstore/trunk/ecstore_online/custom_smhw2015/b2c/view/site/passport/signup-new.html
+/opt/respository/svn-ecstore/ecstore/trunk/ecstore_online/public/app/b2c/statics/images/register
+/opt/respository/svn-ecstore/ecstore/trunk/ecstore_online/public/app/b2c/statics/css_mini/register.css
+/opt/respository/svn-ecstore/ecstore/trunk/ecstore_online/public/app/b2c/statics/css_mini/popModal.min.css
+/opt/respository/svn-ecstore/ecstore/trunk/ecstore_online/public/app/b2c/statics/js_mini/jquery-1.11.3.min.js
+/opt/respository/svn-ecstore/ecstore/trunk/ecstore_online/public/app/b2c/statics/js_mini/popModal.min.js
+/opt/respository/svn-ecstore/ecstore/trunk/ecstore_online/public/app/b2c/statics/js/register.js

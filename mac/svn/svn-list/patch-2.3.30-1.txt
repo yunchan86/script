@@ -1,0 +1,2 @@
+/app/b2c/controller/wap/product.php
+/app/content/controller/wap/article.php

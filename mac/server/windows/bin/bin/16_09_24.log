@@ -1,0 +1,253 @@
+[ 2016-09-24T21:57:54+08:00 ] 127.0.0.1 /index.php?s=/api/config/init
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.141529s ]
+INFO: [ app_init ] --END-- [ RunTime:0.192851s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_module` [ RunTime:0.000105s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_config` [ RunTime:0.000038s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SELECT `type`,`name`,`value` FROM `dev3sns_config` WHERE `status` = 1  [ RunTime:0.000031s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [8] Undefined variable: token D:\repository\svn\project\web\code\trunk\Application\Common\Model\ModuleModel.class.php 第 222 行.
+
+[ 2016-09-24T21:59:37+08:00 ] 127.0.0.1 /index.php?s=/api/currency/rate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002571s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003109s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_module` [ RunTime:0.000099s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_config` [ RunTime:0.000047s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SELECT `type`,`name`,`value` FROM `dev3sns_config` WHERE `status` = 1  [ RunTime:0.000054s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [8] Undefined variable: token D:\repository\svn\project\web\code\trunk\Application\Common\Model\ModuleModel.class.php 第 222 行.
+
+[ 2016-09-24T22:00:07+08:00 ] 127.0.0.1 /index.php?s=/api/currency/rate&to=USD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002183s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002561s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_module` [ RunTime:0.000087s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_config` [ RunTime:0.000049s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SELECT `type`,`name`,`value` FROM `dev3sns_config` WHERE `status` = 1  [ RunTime:0.000054s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [8] Undefined variable: token D:\repository\svn\project\web\code\trunk\Application\Common\Model\ModuleModel.class.php 第 222 行.
+
+[ 2016-09-24T22:00:48+08:00 ] 127.0.0.1 /index.php?s=/api/currency/rate&to=USD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001572s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001858s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_module` [ RunTime:0.000056s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_config` [ RunTime:0.000031s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SELECT `type`,`name`,`value` FROM `dev3sns_config` WHERE `status` = 1  [ RunTime:0.000030s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [8] Undefined variable: token D:\repository\svn\project\web\code\trunk\Application\Common\Model\ModuleModel.class.php 第 222 行.
+
+[ 2016-09-24T22:02:43+08:00 ] 127.0.0.1 /index.php?s=/api/currency/rate&to=USD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.003381s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003719s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_module` [ RunTime:0.000064s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_config` [ RunTime:0.000031s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SELECT `type`,`name`,`value` FROM `dev3sns_config` WHERE `status` = 1  [ RunTime:0.000030s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [8] Undefined variable: token D:\repository\svn\project\web\code\trunk\Application\Common\Model\ModuleModel.class.php 第 222 行.
+
+[ 2016-09-24T22:03:06+08:00 ] 127.0.0.1 /index.php?s=/api/account/getbindbank&uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001465s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001781s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_module` [ RunTime:0.000055s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_config` [ RunTime:0.000031s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SELECT `type`,`name`,`value` FROM `dev3sns_config` WHERE `status` = 1  [ RunTime:0.000030s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [8] Undefined variable: token D:\repository\svn\project\web\code\trunk\Application\Common\Model\ModuleModel.class.php 第 222 行.
+
+[ 2016-09-24T22:03:29+08:00 ] 127.0.0.1 /index.php?s=/api/currency/rate
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001716s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002071s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_module` [ RunTime:0.000073s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_config` [ RunTime:0.000040s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SELECT `type`,`name`,`value` FROM `dev3sns_config` WHERE `status` = 1  [ RunTime:0.000051s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [8] Undefined variable: token D:\repository\svn\project\web\code\trunk\Application\Common\Model\ModuleModel.class.php 第 222 行.
+
+[ 2016-09-24T22:03:47+08:00 ] 127.0.0.1 /index.php?s=/api/currency/rate&to=USD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001467s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001787s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_module` [ RunTime:0.000059s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_config` [ RunTime:0.000031s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SELECT `type`,`name`,`value` FROM `dev3sns_config` WHERE `status` = 1  [ RunTime:0.000030s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [8] Undefined variable: token D:\repository\svn\project\web\code\trunk\Application\Common\Model\ModuleModel.class.php 第 222 行.
+
+[ 2016-09-24T22:03:54+08:00 ] 127.0.0.1 /index.php?s=/api/currency/rate&to=USD&from=CNY
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001759s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002102s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_module` [ RunTime:0.000069s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_config` [ RunTime:0.000038s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SELECT `type`,`name`,`value` FROM `dev3sns_config` WHERE `status` = 1  [ RunTime:0.000037s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [8] Undefined variable: token D:\repository\svn\project\web\code\trunk\Application\Common\Model\ModuleModel.class.php 第 222 行.
+
+[ 2016-09-24T22:04:00+08:00 ] 127.0.0.1 /index.php?s=/api/currency/rate&to=USD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001709s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002089s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_module` [ RunTime:0.000070s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_config` [ RunTime:0.000037s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SELECT `type`,`name`,`value` FROM `dev3sns_config` WHERE `status` = 1  [ RunTime:0.000036s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [8] Undefined variable: token D:\repository\svn\project\web\code\trunk\Application\Common\Model\ModuleModel.class.php 第 222 行.
+
+[ 2016-09-24T22:05:17+08:00 ] 127.0.0.1 /index.php?s=/api/currency/rate&to=USD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002260s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002799s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_module` [ RunTime:0.000064s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `dev3sns_config` [ RunTime:0.000031s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [2] mysqli::query(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 88 行.
+NOTIC: [2] mysqli::more_results(): Couldn't fetch mysqli D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 90 行.
+SQL: SELECT `type`,`name`,`value` FROM `dev3sns_config` WHERE `status` = 1  [ RunTime:0.000030s ]
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 100 行.
+NOTIC: [8] Trying to get property of non-object D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 101 行.
+NOTIC: [8] Undefined variable: token D:\repository\svn\project\web\code\trunk\Application\Common\Model\ModuleModel.class.php 第 222 行.
+

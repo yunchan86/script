@@ -1,0 +1,4 @@
+/app/b2c/controller/site/member.php
+/app/b2c/controller/site/paycenter.php
+/app/b2c/controller/wap/paycenter.php
+/app/b2c/dbschema/members.php

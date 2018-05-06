@@ -1,0 +1,3 @@
+/app/trustlogin/services.xml
+/app/wap/services.xml
+/app/wap/lib/trustlogin/weixin.php

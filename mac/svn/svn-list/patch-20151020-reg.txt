@@ -1,0 +1,2 @@
+/custom_smhw2015/b2c/view/site/passport/signup-new.html
+/public/app/b2c/statics/css_mini/register.css

@@ -1,0 +1,1 @@
+/public/app/b2c/statics/js/register.js

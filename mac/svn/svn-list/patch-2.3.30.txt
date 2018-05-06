@@ -1,0 +1,16 @@
+/app/b2c/controller/wap/gallery.php
+/custom_smhw2015/b2c/controller/wap/product.php
+/app/b2c/lib/user/passport.php
+/custom_smhw2015/content/controller/wap/article.php
+/app/dev/controller/tools.php
+/app/wap/controller/default.php
+/app/wap/view/footer.html
+/app/weixin/dbschema/message.php
+/app/weixin/lib/message.php
+/app/weixin/lib/wechat.php
+/app/weixin/lib/finder/message.php
+/app/weixin/view/admin/autoreply.html
+/app/weixin/view/admin/setting.html
+/public/app/desktop/statics/js/coms/finder.js
+/public/app/desktop/statics/js_mini/coms/finder.js
+/public/app/desktop/statics/js_mini/tools_min.js

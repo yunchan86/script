@@ -1,0 +1,7 @@
+/custom_smhw2015/b2c/controller/site/comment.php
+/custom_smhw2015/b2c/controller/site/member.php
+/custom_smhw2015/b2c/lib/message/disask.php
+/custom_smhw2015/b2c/view/site/member/nodiscuss.html
+/custom_smhw2015/b2c/view/site/member/order_item.html
+/public/app/b2c/statics/js/imgtools.js
+/public/app/b2c/statics/js/discuss-img.js

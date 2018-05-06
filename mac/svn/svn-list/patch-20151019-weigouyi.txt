@@ -1,0 +1,6 @@
+/app/weigouyi/controller/wap/stat.php
+/app/weigouyi/dbschema/stat.php
+/app/weigouyi/model/stat.php
+/app/weigouyi/view/wap/stat.html
+/app/weigouyi/wap.xml
+/public/app/weigouyi//statics

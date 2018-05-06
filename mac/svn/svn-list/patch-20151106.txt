@@ -1,0 +1,2 @@
+/custom_smhw2015/b2c/view/site/passport/signup-new.html
+/custom_smhw2015/b2c/view/site/passport/signin/member-signin-new-2.html

@@ -1,0 +1,3 @@
+/app/weigouyi/view/wap/stat.html
+/app/weigouyi/controller/wap/stat.php
+/public/app/weigouyi/statics/css/stat.css

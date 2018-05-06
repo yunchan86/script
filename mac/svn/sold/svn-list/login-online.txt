@@ -1,0 +1,5 @@
+/custom_smhw2015/b2c/controller/site/passport.php
+/custom_smhw2015/b2c/view/site/passport/index.html
+/custom_smhw2015/b2c/view/site/passport/signin/member-signin-new-2.html
+/public/app/b2c/statics/images
+/public/app/b2c/statics/css/signin-new.css

@@ -1,0 +1,8 @@
+/custom_smhw2015/b2c/controller/site/passport.php
+/custom_smhw2015/b2c/view/site/passport/signup-new.html
+/public/app/b2c/statics/css_mini/register.css
+/public/app/b2c/statics/css_mini/popModal.min.css
+/public/app/b2c/statics/js_mini/jquery-1.11.3.min.js
+/public/app/b2c/statics/js_mini/popModal.min.js
+/public/app/b2c/statics/js/register.js
+/public/app/b2c/statics/images/register/*

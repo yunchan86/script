@@ -1,0 +1,30 @@
+[ 2016-10-16T15:04:24+08:00 ] 127.0.0.1 /index.php?s=/apii/currency/rate&to=USD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002432s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002814s ]
+
+[ 2016-10-16T15:19:36+08:00 ] 127.0.0.1 /index.php?s=/apii/currency/rate&to=USD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001650s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002049s ]
+
+[ 2016-10-16T15:23:48+08:00 ] 127.0.0.1 /index.php?s=/apii/currency/rate&to=USD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.002828s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003209s ]
+
+[ 2016-10-16T15:24:41+08:00 ] 127.0.0.1 /index.php?s=/apii/currency/rate&to=USD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001985s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002442s ]
+
+[ 2016-10-16T15:25:30+08:00 ] 127.0.0.1 /index.php?s=/apii/currency/rate&to=USD
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001977s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002420s ]
+

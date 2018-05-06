@@ -1,0 +1,36 @@
+[ 2016-09-15T17:09:47+08:00 ] 127.0.0.1 /index.php?s=api/api/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' D:\repository\svn\project\web\code\trunk\Application\Common\Common\api.php 第 42 行.
+
+[ 2016-09-15T17:10:18+08:00 ] 127.0.0.1 /index.php?s=api/config/get.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' D:\repository\svn\project\web\code\trunk\Application\Common\Common\api.php 第 42 行.
+
+[ 2016-09-15T17:17:55+08:00 ] 127.0.0.1 /index.php?s=api/config/get.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' D:\repository\svn\project\web\code\trunk\Application\Common\Common\api.php 第 42 行.
+
+[ 2016-09-15T17:18:00+08:00 ] 127.0.0.1 /index.php?s=api/config/get.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' D:\repository\svn\project\web\code\trunk\Application\Common\Common\api.php 第 42 行.
+
+[ 2016-09-15T17:22:42+08:00 ] 127.0.0.1 /index.php?s=api/config/get.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+NOTIC: [2] mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) D:\repository\svn\project\web\code\trunk\ThinkPHP\Library\Think\Db\Driver\Mysqli.class.php 第 44 行.
+NOTIC: [8] Use of undefined constant IS_AJAX - assumed 'IS_AJAX' D:\repository\svn\project\web\code\trunk\Application\Common\Common\api.php 第 42 行.
+
+[ 2016-09-15T17:55:23+08:00 ] 127.0.0.1 /index.php?s=/index.php/api/user/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.001613s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001931s ]
+

@@ -1,0 +1,2 @@
+/opt/respository/svn-ecstore/ecstore/branches/ecstoreDev20150722/custom_smhw2015/b2c/view/site/passport/signin/member-signin-new-2.html
+/opt/respository/svn-ecstore/ecstore/branches/ecstoreDev20150722/custom_smhw2015/b2c/view/site/passport/signup-new.html
