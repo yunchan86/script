@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yacol.mybatis.mapper.KbTableInfoMBEnatityMapper" >
+  <resultMap id="BaseResultMap" type="com.yacol.mybatis.beans.KbTableInfoMBEnatity" >
+    <id column="table_id" property="tableId" jdbcType="BIGINT" />
+    <result column="table_desc" property="tableDesc" jdbcType="VARCHAR" />
+    <result column="provider_id" property="providerId" jdbcType="VARCHAR" />
+    <result column="campaign_id" property="campaignId" jdbcType="BIGINT" />
+    <result column="originator" property="originator" jdbcType="BIGINT" />
+    <result column="originator_type" property="originatorType" jdbcType="TINYINT" />
+    <result column="table_type" property="tableType" jdbcType="TINYINT" />
+    <result column="user_limit" property="userLimit" jdbcType="SMALLINT" />
+    <result column="cur_user_num" property="curUserNum" jdbcType="INTEGER" />
+    <result column="table_logo" property="tableLogo" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="start_time" property="startTime" jdbcType="TIMESTAMP" />
+    <result column="expire_time" property="expireTime" jdbcType="TIMESTAMP" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="is_started" property="isStarted" jdbcType="TINYINT" />
+    <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="is_recommend" property="isRecommend" jdbcType="TINYINT" />
+    <result column="bonus_allot_type" property="bonusAllotType" jdbcType="TINYINT" />
+    <result column="is_public" property="isPublic" jdbcType="BIT" />
+    <result column="draw_time" property="drawTime" jdbcType="TIMESTAMP" />
+    <result column="draw_start_time" property="drawStartTime" jdbcType="TIMESTAMP" />
+    <result column="draw_end_time" property="drawEndTime" jdbcType="TIMESTAMP" />
+    <result column="draw_status" property="drawStatus" jdbcType="BIT" />
+    <result column="total_draw_amt" property="totalDrawAmt" jdbcType="INTEGER" />
+    <result column="total_take_draw_amt" property="totalTakeDrawAmt" jdbcType="INTEGER" />
+    <result column="total_remain_draw_amt" property="totalRemainDrawAmt" jdbcType="INTEGER" />
+    <result column="consume_user_num" property="consumeUserNum" jdbcType="INTEGER" />
+    <result column="take_draw_user_num" property="takeDrawUserNum" jdbcType="INTEGER" />
+    <result column="untake_draw_user_num" property="untakeDrawUserNum" jdbcType="INTEGER" />
+    <result column="fake_Consume_sum" property="fakeConsumeSum" jdbcType="INTEGER" />
+    <result column="is_user_opt" property="isUserOpt" jdbcType="BIT" />
+    <result column="consume_limit" property="consumeLimit" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.yacol.mybatis.beans.KbTableInfoMBEnatity" extends="BaseResultMap" >
+    <result column="user_list" property="userList" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    table_id, table_desc, provider_id, campaign_id, originator, originator_type, table_type, 
+    user_limit, cur_user_num, table_logo, create_time, start_time, expire_time, status, 
+    is_started, password, is_recommend, bonus_allot_type, is_public, draw_time, draw_start_time, 
+    draw_end_time, draw_status, total_draw_amt, total_take_draw_amt, total_remain_draw_amt, 
+    consume_user_num, take_draw_user_num, untake_draw_user_num, fake_Consume_sum, is_user_opt, 
+    consume_limit
+  </sql>
+  <sql id="Blob_Column_List" >
+    user_list
+  </sql>
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.yacol.mybatis.beans.KbTableInfoMBEnatityExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from kb_table_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.yacol.mybatis.beans.KbTableInfoMBEnatityExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from kb_table_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from kb_table_info
+    where table_id = #{tableId,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from kb_table_info
+    where table_id = #{tableId,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.yacol.mybatis.beans.KbTableInfoMBEnatityExample" >
+    delete from kb_table_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.yacol.mybatis.beans.KbTableInfoMBEnatity" >
+    insert into kb_table_info (table_id, table_desc, provider_id, 
+      campaign_id, originator, originator_type, 
+      table_type, user_limit, cur_user_num, 
+      table_logo, create_time, start_time, 
+      expire_time, status, is_started, 
+      password, is_recommend, bonus_allot_type, 
+      is_public, draw_time, draw_start_time, 
+      draw_end_time, draw_status, total_draw_amt, 
+      total_take_draw_amt, total_remain_draw_amt, consume_user_num, 
+      take_draw_user_num, untake_draw_user_num, fake_Consume_sum, 
+      is_user_opt, consume_limit, user_list
+      )
+    values (#{tableId,jdbcType=BIGINT}, #{tableDesc,jdbcType=VARCHAR}, #{providerId,jdbcType=VARCHAR}, 
+      #{campaignId,jdbcType=BIGINT}, #{originator,jdbcType=BIGINT}, #{originatorType,jdbcType=TINYINT}, 
+      #{tableType,jdbcType=TINYINT}, #{userLimit,jdbcType=SMALLINT}, #{curUserNum,jdbcType=INTEGER}, 
+      #{tableLogo,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{startTime,jdbcType=TIMESTAMP}, 
+      #{expireTime,jdbcType=TIMESTAMP}, #{status,jdbcType=TINYINT}, #{isStarted,jdbcType=TINYINT}, 
+      #{password,jdbcType=VARCHAR}, #{isRecommend,jdbcType=TINYINT}, #{bonusAllotType,jdbcType=TINYINT}, 
+      #{isPublic,jdbcType=BIT}, #{drawTime,jdbcType=TIMESTAMP}, #{drawStartTime,jdbcType=TIMESTAMP}, 
+      #{drawEndTime,jdbcType=TIMESTAMP}, #{drawStatus,jdbcType=BIT}, #{totalDrawAmt,jdbcType=INTEGER}, 
+      #{totalTakeDrawAmt,jdbcType=INTEGER}, #{totalRemainDrawAmt,jdbcType=INTEGER}, #{consumeUserNum,jdbcType=INTEGER}, 
+      #{takeDrawUserNum,jdbcType=INTEGER}, #{untakeDrawUserNum,jdbcType=INTEGER}, #{fakeConsumeSum,jdbcType=INTEGER}, 
+      #{isUserOpt,jdbcType=BIT}, #{consumeLimit,jdbcType=INTEGER}, #{userList,jdbcType=LONGVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.yacol.mybatis.beans.KbTableInfoMBEnatity" >
+    insert into kb_table_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="tableId != null" >
+        table_id,
+      </if>
+      <if test="tableDesc != null" >
+        table_desc,
+      </if>
+      <if test="providerId != null" >
+        provider_id,
+      </if>
+      <if test="campaignId != null" >
+        campaign_id,
+      </if>
+      <if test="originator != null" >
+        originator,
+      </if>
+      <if test="originatorType != null" >
+        originator_type,
+      </if>
+      <if test="tableType != null" >
+        table_type,
+      </if>
+      <if test="userLimit != null" >
+        user_limit,
+      </if>
+      <if test="curUserNum != null" >
+        cur_user_num,
+      </if>
+      <if test="tableLogo != null" >
+        table_logo,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="startTime != null" >
+        start_time,
+      </if>
+      <if test="expireTime != null" >
+        expire_time,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="isStarted != null" >
+        is_started,
+      </if>
+      <if test="password != null" >
+        password,
+      </if>
+      <if test="isRecommend != null" >
+        is_recommend,
+      </if>
+      <if test="bonusAllotType != null" >
+        bonus_allot_type,
+      </if>
+      <if test="isPublic != null" >
+        is_public,
+      </if>
+      <if test="drawTime != null" >
+        draw_time,
+      </if>
+      <if test="drawStartTime != null" >
+        draw_start_time,
+      </if>
+      <if test="drawEndTime != null" >
+        draw_end_time,
+      </if>
+      <if test="drawStatus != null" >
+        draw_status,
+      </if>
+      <if test="totalDrawAmt != null" >
+        total_draw_amt,
+      </if>
+      <if test="totalTakeDrawAmt != null" >
+        total_take_draw_amt,
+      </if>
+      <if test="totalRemainDrawAmt != null" >
+        total_remain_draw_amt,
+      </if>
+      <if test="consumeUserNum != null" >
+        consume_user_num,
+      </if>
+      <if test="takeDrawUserNum != null" >
+        take_draw_user_num,
+      </if>
+      <if test="untakeDrawUserNum != null" >
+        untake_draw_user_num,
+      </if>
+      <if test="fakeConsumeSum != null" >
+        fake_Consume_sum,
+      </if>
+      <if test="isUserOpt != null" >
+        is_user_opt,
+      </if>
+      <if test="consumeLimit != null" >
+        consume_limit,
+      </if>
+      <if test="userList != null" >
+        user_list,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="tableId != null" >
+        #{tableId,jdbcType=BIGINT},
+      </if>
+      <if test="tableDesc != null" >
+        #{tableDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="providerId != null" >
+        #{providerId,jdbcType=VARCHAR},
+      </if>
+      <if test="campaignId != null" >
+        #{campaignId,jdbcType=BIGINT},
+      </if>
+      <if test="originator != null" >
+        #{originator,jdbcType=BIGINT},
+      </if>
+      <if test="originatorType != null" >
+        #{originatorType,jdbcType=TINYINT},
+      </if>
+      <if test="tableType != null" >
+        #{tableType,jdbcType=TINYINT},
+      </if>
+      <if test="userLimit != null" >
+        #{userLimit,jdbcType=SMALLINT},
+      </if>
+      <if test="curUserNum != null" >
+        #{curUserNum,jdbcType=INTEGER},
+      </if>
+      <if test="tableLogo != null" >
+        #{tableLogo,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="startTime != null" >
+        #{startTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="expireTime != null" >
+        #{expireTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="isStarted != null" >
+        #{isStarted,jdbcType=TINYINT},
+      </if>
+      <if test="password != null" >
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="isRecommend != null" >
+        #{isRecommend,jdbcType=TINYINT},
+      </if>
+      <if test="bonusAllotType != null" >
+        #{bonusAllotType,jdbcType=TINYINT},
+      </if>
+      <if test="isPublic != null" >
+        #{isPublic,jdbcType=BIT},
+      </if>
+      <if test="drawTime != null" >
+        #{drawTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="drawStartTime != null" >
+        #{drawStartTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="drawEndTime != null" >
+        #{drawEndTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="drawStatus != null" >
+        #{drawStatus,jdbcType=BIT},
+      </if>
+      <if test="totalDrawAmt != null" >
+        #{totalDrawAmt,jdbcType=INTEGER},
+      </if>
+      <if test="totalTakeDrawAmt != null" >
+        #{totalTakeDrawAmt,jdbcType=INTEGER},
+      </if>
+      <if test="totalRemainDrawAmt != null" >
+        #{totalRemainDrawAmt,jdbcType=INTEGER},
+      </if>
+      <if test="consumeUserNum != null" >
+        #{consumeUserNum,jdbcType=INTEGER},
+      </if>
+      <if test="takeDrawUserNum != null" >
+        #{takeDrawUserNum,jdbcType=INTEGER},
+      </if>
+      <if test="untakeDrawUserNum != null" >
+        #{untakeDrawUserNum,jdbcType=INTEGER},
+      </if>
+      <if test="fakeConsumeSum != null" >
+        #{fakeConsumeSum,jdbcType=INTEGER},
+      </if>
+      <if test="isUserOpt != null" >
+        #{isUserOpt,jdbcType=BIT},
+      </if>
+      <if test="consumeLimit != null" >
+        #{consumeLimit,jdbcType=INTEGER},
+      </if>
+      <if test="userList != null" >
+        #{userList,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.yacol.mybatis.beans.KbTableInfoMBEnatityExample" resultType="java.lang.Integer" >
+    select count(*) from kb_table_info
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update kb_table_info
+    <set >
+      <if test="record.tableId != null" >
+        table_id = #{record.tableId,jdbcType=BIGINT},
+      </if>
+      <if test="record.tableDesc != null" >
+        table_desc = #{record.tableDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.providerId != null" >
+        provider_id = #{record.providerId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.campaignId != null" >
+        campaign_id = #{record.campaignId,jdbcType=BIGINT},
+      </if>
+      <if test="record.originator != null" >
+        originator = #{record.originator,jdbcType=BIGINT},
+      </if>
+      <if test="record.originatorType != null" >
+        originator_type = #{record.originatorType,jdbcType=TINYINT},
+      </if>
+      <if test="record.tableType != null" >
+        table_type = #{record.tableType,jdbcType=TINYINT},
+      </if>
+      <if test="record.userLimit != null" >
+        user_limit = #{record.userLimit,jdbcType=SMALLINT},
+      </if>
+      <if test="record.curUserNum != null" >
+        cur_user_num = #{record.curUserNum,jdbcType=INTEGER},
+      </if>
+      <if test="record.tableLogo != null" >
+        table_logo = #{record.tableLogo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createTime != null" >
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.startTime != null" >
+        start_time = #{record.startTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.expireTime != null" >
+        expire_time = #{record.expireTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.status != null" >
+        status = #{record.status,jdbcType=TINYINT},
+      </if>
+      <if test="record.isStarted != null" >
+        is_started = #{record.isStarted,jdbcType=TINYINT},
+      </if>
+      <if test="record.password != null" >
+        password = #{record.password,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isRecommend != null" >
+        is_recommend = #{record.isRecommend,jdbcType=TINYINT},
+      </if>
+      <if test="record.bonusAllotType != null" >
+        bonus_allot_type = #{record.bonusAllotType,jdbcType=TINYINT},
+      </if>
+      <if test="record.isPublic != null" >
+        is_public = #{record.isPublic,jdbcType=BIT},
+      </if>
+      <if test="record.drawTime != null" >
+        draw_time = #{record.drawTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.drawStartTime != null" >
+        draw_start_time = #{record.drawStartTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.drawEndTime != null" >
+        draw_end_time = #{record.drawEndTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.drawStatus != null" >
+        draw_status = #{record.drawStatus,jdbcType=BIT},
+      </if>
+      <if test="record.totalDrawAmt != null" >
+        total_draw_amt = #{record.totalDrawAmt,jdbcType=INTEGER},
+      </if>
+      <if test="record.totalTakeDrawAmt != null" >
+        total_take_draw_amt = #{record.totalTakeDrawAmt,jdbcType=INTEGER},
+      </if>
+      <if test="record.totalRemainDrawAmt != null" >
+        total_remain_draw_amt = #{record.totalRemainDrawAmt,jdbcType=INTEGER},
+      </if>
+      <if test="record.consumeUserNum != null" >
+        consume_user_num = #{record.consumeUserNum,jdbcType=INTEGER},
+      </if>
+      <if test="record.takeDrawUserNum != null" >
+        take_draw_user_num = #{record.takeDrawUserNum,jdbcType=INTEGER},
+      </if>
+      <if test="record.untakeDrawUserNum != null" >
+        untake_draw_user_num = #{record.untakeDrawUserNum,jdbcType=INTEGER},
+      </if>
+      <if test="record.fakeConsumeSum != null" >
+        fake_Consume_sum = #{record.fakeConsumeSum,jdbcType=INTEGER},
+      </if>
+      <if test="record.isUserOpt != null" >
+        is_user_opt = #{record.isUserOpt,jdbcType=BIT},
+      </if>
+      <if test="record.consumeLimit != null" >
+        consume_limit = #{record.consumeLimit,jdbcType=INTEGER},
+      </if>
+      <if test="record.userList != null" >
+        user_list = #{record.userList,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map" >
+    update kb_table_info
+    set table_id = #{record.tableId,jdbcType=BIGINT},
+      table_desc = #{record.tableDesc,jdbcType=VARCHAR},
+      provider_id = #{record.providerId,jdbcType=VARCHAR},
+      campaign_id = #{record.campaignId,jdbcType=BIGINT},
+      originator = #{record.originator,jdbcType=BIGINT},
+      originator_type = #{record.originatorType,jdbcType=TINYINT},
+      table_type = #{record.tableType,jdbcType=TINYINT},
+      user_limit = #{record.userLimit,jdbcType=SMALLINT},
+      cur_user_num = #{record.curUserNum,jdbcType=INTEGER},
+      table_logo = #{record.tableLogo,jdbcType=VARCHAR},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      start_time = #{record.startTime,jdbcType=TIMESTAMP},
+      expire_time = #{record.expireTime,jdbcType=TIMESTAMP},
+      status = #{record.status,jdbcType=TINYINT},
+      is_started = #{record.isStarted,jdbcType=TINYINT},
+      password = #{record.password,jdbcType=VARCHAR},
+      is_recommend = #{record.isRecommend,jdbcType=TINYINT},
+      bonus_allot_type = #{record.bonusAllotType,jdbcType=TINYINT},
+      is_public = #{record.isPublic,jdbcType=BIT},
+      draw_time = #{record.drawTime,jdbcType=TIMESTAMP},
+      draw_start_time = #{record.drawStartTime,jdbcType=TIMESTAMP},
+      draw_end_time = #{record.drawEndTime,jdbcType=TIMESTAMP},
+      draw_status = #{record.drawStatus,jdbcType=BIT},
+      total_draw_amt = #{record.totalDrawAmt,jdbcType=INTEGER},
+      total_take_draw_amt = #{record.totalTakeDrawAmt,jdbcType=INTEGER},
+      total_remain_draw_amt = #{record.totalRemainDrawAmt,jdbcType=INTEGER},
+      consume_user_num = #{record.consumeUserNum,jdbcType=INTEGER},
+      take_draw_user_num = #{record.takeDrawUserNum,jdbcType=INTEGER},
+      untake_draw_user_num = #{record.untakeDrawUserNum,jdbcType=INTEGER},
+      fake_Consume_sum = #{record.fakeConsumeSum,jdbcType=INTEGER},
+      is_user_opt = #{record.isUserOpt,jdbcType=BIT},
+      consume_limit = #{record.consumeLimit,jdbcType=INTEGER},
+      user_list = #{record.userList,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update kb_table_info
+    set table_id = #{record.tableId,jdbcType=BIGINT},
+      table_desc = #{record.tableDesc,jdbcType=VARCHAR},
+      provider_id = #{record.providerId,jdbcType=VARCHAR},
+      campaign_id = #{record.campaignId,jdbcType=BIGINT},
+      originator = #{record.originator,jdbcType=BIGINT},
+      originator_type = #{record.originatorType,jdbcType=TINYINT},
+      table_type = #{record.tableType,jdbcType=TINYINT},
+      user_limit = #{record.userLimit,jdbcType=SMALLINT},
+      cur_user_num = #{record.curUserNum,jdbcType=INTEGER},
+      table_logo = #{record.tableLogo,jdbcType=VARCHAR},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      start_time = #{record.startTime,jdbcType=TIMESTAMP},
+      expire_time = #{record.expireTime,jdbcType=TIMESTAMP},
+      status = #{record.status,jdbcType=TINYINT},
+      is_started = #{record.isStarted,jdbcType=TINYINT},
+      password = #{record.password,jdbcType=VARCHAR},
+      is_recommend = #{record.isRecommend,jdbcType=TINYINT},
+      bonus_allot_type = #{record.bonusAllotType,jdbcType=TINYINT},
+      is_public = #{record.isPublic,jdbcType=BIT},
+      draw_time = #{record.drawTime,jdbcType=TIMESTAMP},
+      draw_start_time = #{record.drawStartTime,jdbcType=TIMESTAMP},
+      draw_end_time = #{record.drawEndTime,jdbcType=TIMESTAMP},
+      draw_status = #{record.drawStatus,jdbcType=BIT},
+      total_draw_amt = #{record.totalDrawAmt,jdbcType=INTEGER},
+      total_take_draw_amt = #{record.totalTakeDrawAmt,jdbcType=INTEGER},
+      total_remain_draw_amt = #{record.totalRemainDrawAmt,jdbcType=INTEGER},
+      consume_user_num = #{record.consumeUserNum,jdbcType=INTEGER},
+      take_draw_user_num = #{record.takeDrawUserNum,jdbcType=INTEGER},
+      untake_draw_user_num = #{record.untakeDrawUserNum,jdbcType=INTEGER},
+      fake_Consume_sum = #{record.fakeConsumeSum,jdbcType=INTEGER},
+      is_user_opt = #{record.isUserOpt,jdbcType=BIT},
+      consume_limit = #{record.consumeLimit,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.yacol.mybatis.beans.KbTableInfoMBEnatity" >
+    update kb_table_info
+    <set >
+      <if test="tableDesc != null" >
+        table_desc = #{tableDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="providerId != null" >
+        provider_id = #{providerId,jdbcType=VARCHAR},
+      </if>
+      <if test="campaignId != null" >
+        campaign_id = #{campaignId,jdbcType=BIGINT},
+      </if>
+      <if test="originator != null" >
+        originator = #{originator,jdbcType=BIGINT},
+      </if>
+      <if test="originatorType != null" >
+        originator_type = #{originatorType,jdbcType=TINYINT},
+      </if>
+      <if test="tableType != null" >
+        table_type = #{tableType,jdbcType=TINYINT},
+      </if>
+      <if test="userLimit != null" >
+        user_limit = #{userLimit,jdbcType=SMALLINT},
+      </if>
+      <if test="curUserNum != null" >
+        cur_user_num = #{curUserNum,jdbcType=INTEGER},
+      </if>
+      <if test="tableLogo != null" >
+        table_logo = #{tableLogo,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="startTime != null" >
+        start_time = #{startTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="expireTime != null" >
+        expire_time = #{expireTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="isStarted != null" >
+        is_started = #{isStarted,jdbcType=TINYINT},
+      </if>
+      <if test="password != null" >
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="isRecommend != null" >
+        is_recommend = #{isRecommend,jdbcType=TINYINT},
+      </if>
+      <if test="bonusAllotType != null" >
+        bonus_allot_type = #{bonusAllotType,jdbcType=TINYINT},
+      </if>
+      <if test="isPublic != null" >
+        is_public = #{isPublic,jdbcType=BIT},
+      </if>
+      <if test="drawTime != null" >
+        draw_time = #{drawTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="drawStartTime != null" >
+        draw_start_time = #{drawStartTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="drawEndTime != null" >
+        draw_end_time = #{drawEndTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="drawStatus != null" >
+        draw_status = #{drawStatus,jdbcType=BIT},
+      </if>
+      <if test="totalDrawAmt != null" >
+        total_draw_amt = #{totalDrawAmt,jdbcType=INTEGER},
+      </if>
+      <if test="totalTakeDrawAmt != null" >
+        total_take_draw_amt = #{totalTakeDrawAmt,jdbcType=INTEGER},
+      </if>
+      <if test="totalRemainDrawAmt != null" >
+        total_remain_draw_amt = #{totalRemainDrawAmt,jdbcType=INTEGER},
+      </if>
+      <if test="consumeUserNum != null" >
+        consume_user_num = #{consumeUserNum,jdbcType=INTEGER},
+      </if>
+      <if test="takeDrawUserNum != null" >
+        take_draw_user_num = #{takeDrawUserNum,jdbcType=INTEGER},
+      </if>
+      <if test="untakeDrawUserNum != null" >
+        untake_draw_user_num = #{untakeDrawUserNum,jdbcType=INTEGER},
+      </if>
+      <if test="fakeConsumeSum != null" >
+        fake_Consume_sum = #{fakeConsumeSum,jdbcType=INTEGER},
+      </if>
+      <if test="isUserOpt != null" >
+        is_user_opt = #{isUserOpt,jdbcType=BIT},
+      </if>
+      <if test="consumeLimit != null" >
+        consume_limit = #{consumeLimit,jdbcType=INTEGER},
+      </if>
+      <if test="userList != null" >
+        user_list = #{userList,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where table_id = #{tableId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.yacol.mybatis.beans.KbTableInfoMBEnatity" >
+    update kb_table_info
+    set table_desc = #{tableDesc,jdbcType=VARCHAR},
+      provider_id = #{providerId,jdbcType=VARCHAR},
+      campaign_id = #{campaignId,jdbcType=BIGINT},
+      originator = #{originator,jdbcType=BIGINT},
+      originator_type = #{originatorType,jdbcType=TINYINT},
+      table_type = #{tableType,jdbcType=TINYINT},
+      user_limit = #{userLimit,jdbcType=SMALLINT},
+      cur_user_num = #{curUserNum,jdbcType=INTEGER},
+      table_logo = #{tableLogo,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      start_time = #{startTime,jdbcType=TIMESTAMP},
+      expire_time = #{expireTime,jdbcType=TIMESTAMP},
+      status = #{status,jdbcType=TINYINT},
+      is_started = #{isStarted,jdbcType=TINYINT},
+      password = #{password,jdbcType=VARCHAR},
+      is_recommend = #{isRecommend,jdbcType=TINYINT},
+      bonus_allot_type = #{bonusAllotType,jdbcType=TINYINT},
+      is_public = #{isPublic,jdbcType=BIT},
+      draw_time = #{drawTime,jdbcType=TIMESTAMP},
+      draw_start_time = #{drawStartTime,jdbcType=TIMESTAMP},
+      draw_end_time = #{drawEndTime,jdbcType=TIMESTAMP},
+      draw_status = #{drawStatus,jdbcType=BIT},
+      total_draw_amt = #{totalDrawAmt,jdbcType=INTEGER},
+      total_take_draw_amt = #{totalTakeDrawAmt,jdbcType=INTEGER},
+      total_remain_draw_amt = #{totalRemainDrawAmt,jdbcType=INTEGER},
+      consume_user_num = #{consumeUserNum,jdbcType=INTEGER},
+      take_draw_user_num = #{takeDrawUserNum,jdbcType=INTEGER},
+      untake_draw_user_num = #{untakeDrawUserNum,jdbcType=INTEGER},
+      fake_Consume_sum = #{fakeConsumeSum,jdbcType=INTEGER},
+      is_user_opt = #{isUserOpt,jdbcType=BIT},
+      consume_limit = #{consumeLimit,jdbcType=INTEGER},
+      user_list = #{userList,jdbcType=LONGVARCHAR}
+    where table_id = #{tableId,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.yacol.mybatis.beans.KbTableInfoMBEnatity" >
+    update kb_table_info
+    set table_desc = #{tableDesc,jdbcType=VARCHAR},
+      provider_id = #{providerId,jdbcType=VARCHAR},
+      campaign_id = #{campaignId,jdbcType=BIGINT},
+      originator = #{originator,jdbcType=BIGINT},
+      originator_type = #{originatorType,jdbcType=TINYINT},
+      table_type = #{tableType,jdbcType=TINYINT},
+      user_limit = #{userLimit,jdbcType=SMALLINT},
+      cur_user_num = #{curUserNum,jdbcType=INTEGER},
+      table_logo = #{tableLogo,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      start_time = #{startTime,jdbcType=TIMESTAMP},
+      expire_time = #{expireTime,jdbcType=TIMESTAMP},
+      status = #{status,jdbcType=TINYINT},
+      is_started = #{isStarted,jdbcType=TINYINT},
+      password = #{password,jdbcType=VARCHAR},
+      is_recommend = #{isRecommend,jdbcType=TINYINT},
+      bonus_allot_type = #{bonusAllotType,jdbcType=TINYINT},
+      is_public = #{isPublic,jdbcType=BIT},
+      draw_time = #{drawTime,jdbcType=TIMESTAMP},
+      draw_start_time = #{drawStartTime,jdbcType=TIMESTAMP},
+      draw_end_time = #{drawEndTime,jdbcType=TIMESTAMP},
+      draw_status = #{drawStatus,jdbcType=BIT},
+      total_draw_amt = #{totalDrawAmt,jdbcType=INTEGER},
+      total_take_draw_amt = #{totalTakeDrawAmt,jdbcType=INTEGER},
+      total_remain_draw_amt = #{totalRemainDrawAmt,jdbcType=INTEGER},
+      consume_user_num = #{consumeUserNum,jdbcType=INTEGER},
+      take_draw_user_num = #{takeDrawUserNum,jdbcType=INTEGER},
+      untake_draw_user_num = #{untakeDrawUserNum,jdbcType=INTEGER},
+      fake_Consume_sum = #{fakeConsumeSum,jdbcType=INTEGER},
+      is_user_opt = #{isUserOpt,jdbcType=BIT},
+      consume_limit = #{consumeLimit,jdbcType=INTEGER}
+    where table_id = #{tableId,jdbcType=BIGINT}
+  </update>
+</mapper>

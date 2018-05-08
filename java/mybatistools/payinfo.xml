@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+ <!-- classPathEntry:数据库的JDBC驱动 -->
+  <classPathEntry location="C:\opt\mybatistools\mysql-connector-java-5.1.43.jar" />
+ 
+  <context id="DB2Tables" targetRuntime="MyBatis3">
+ <!-- 去除自动生成的注释 -->
+ <commentGenerator>
+   <property name="suppressAllComments" value="true" />
+ </commentGenerator>
+ 
+     <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        connectionURL="jdbc:mysql://153.36.234.88:3306/smarthome?autoReconnect=true&amp;zeroDateTimeBehavior=convertToNull"
+        userId="vbox"
+        password="XH3vEyhU74A7g5IWz">
+    </jdbcConnection>
+
+    <javaTypeResolver >
+      <property name="forceBigDecimals" value="false" />
+    </javaTypeResolver>
+ 
+ <!-- targetProject:自动生成代码的位置 -->
+    <javaModelGenerator targetPackage="com.ll.service.payment.domain" targetProject="C:\opt\mybatistools\sourcecode\payinfo\src">
+      <property name="enableSubPackages" value="true" />
+      <property name="trimStrings" value="true" />
+    </javaModelGenerator>
+
+    <sqlMapGenerator targetPackage="com.ll.service.payment.persistence"  targetProject="C:\opt\mybatistools\sourcecode\payinfo\src">
+      <property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.ll.service.payment.dao"  targetProject="C:\opt\mybatistools\sourcecode\payinfo\src">
+      <property name="enableSubPackages" value="true" />
+    </javaClientGenerator>
+ 
+ <!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名 -->
+    <table schema="payinfo" tableName="user_product" domainObjectName="UserProduct"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="payinfo" tableName="third_order" domainObjectName="ThirdOrder"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="payinfo" tableName="pay_order_detail" domainObjectName="PayOrderDetail"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="payinfo" tableName="product_info" domainObjectName="ProductInfo"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="payinfo" tableName="pay_order" domainObjectName="PayOrder"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	
+	
+	<!--
+	<table schema="luyou" tableName="user_info_hx" domainObjectName="UserInfoHX" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="luyou" tableName="user_add_invite" domainObjectName="UserAddInvite"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="luyou" tableName="user_group_info" domainObjectName="UserGroupInfo"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="luyou" tableName="user_group_members" domainObjectName="UserGroupMember"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="luyou" tableName="user_relations" domainObjectName="UserRelations" />
+	<table schema="luyou" tableName="provider_campaign_info" domainObjectName="ProviderCampaignInfoMBEnatity" />
+	<table schema="luyou" tableName="provider_info" domainObjectName="ProviderInfoMBEnatity" />
+	<table schema="luyou" tableName="user_account" domainObjectName="UserAccountMBEnatity" />
+	<table schema="luyou" tableName="user_act_log" domainObjectName="UserActLogMBEnatity" />
+	<table schema="luyou" tableName="user_info" domainObjectName="UserInfoMBEnatity" />
+	<table schema="luyou" tableName="user_invite" domainObjectName="UserInviteMBEnatity" />
+	<table schema="luyou" tableName="user_points" domainObjectName="UserPointsMBEnatity" />
+	<table schema="luyou" tableName="user_points_log" domainObjectName="UserPointsLogMBEnatity" />
+	<table schema="luyou" tableName="user_relations" domainObjectName="UserRelationsMBEnatity" />
+	<table schema="luyou" tableName="user_sig" domainObjectName="UserSigMBEnatity" />
+	-->
+  </context>
+  <!-- java -jar D:\worker\tools\mybatis-generator-core-1.3.1-bundle\mybatis-generator-core-1.3.1\lib\mybatis-generator-core-1.3.1.jar -configfile D:\worker\tools\mybatis-generator-core-1.3.1-bundle\mybatis-generator-core-1.3.1\kubang\kubang.xml -overwrite -->
+</generatorConfiguration>

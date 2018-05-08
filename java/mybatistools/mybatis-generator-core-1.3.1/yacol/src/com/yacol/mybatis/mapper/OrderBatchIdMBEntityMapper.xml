@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yacol.mybatis.mapper.OrderBatchIdMBEntityMapper" >
+  <resultMap id="BaseResultMap" type="com.yacol.mybatis.beans.OrderBatchIdMBEntityKey" >
+    <id column="order_batch_id" property="orderBatchId" jdbcType="BIGINT" />
+    <id column="server_id" property="serverId" jdbcType="CHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="com.yacol.mybatis.beans.OrderBatchIdMBEntityKey" >
+    delete from order_batchId
+    where order_batch_id = #{orderBatchId,jdbcType=BIGINT}
+      and server_id = #{serverId,jdbcType=CHAR}
+  </delete>
+  <insert id="insert" parameterType="com.yacol.mybatis.beans.OrderBatchIdMBEntityKey" >
+    insert into order_batchId (order_batch_id, server_id)
+    values (#{orderBatchId,jdbcType=BIGINT}, #{serverId,jdbcType=CHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.yacol.mybatis.beans.OrderBatchIdMBEntityKey" >
+    insert into order_batchId
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="orderBatchId != null" >
+        order_batch_id,
+      </if>
+      <if test="serverId != null" >
+        server_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="orderBatchId != null" >
+        #{orderBatchId,jdbcType=BIGINT},
+      </if>
+      <if test="serverId != null" >
+        #{serverId,jdbcType=CHAR},
+      </if>
+    </trim>
+  </insert>
+</mapper>

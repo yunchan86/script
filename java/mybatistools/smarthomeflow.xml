@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+ <!-- classPathEntry:数据库的JDBC驱动 -->
+  <classPathEntry location="C:\opt\mybatistools\mysql-connector-java-5.1.43.jar" />
+ 
+  <context id="DB2Tables" targetRuntime="MyBatis3">
+ <!-- 去除自动生成的注释 -->
+ <commentGenerator>
+   <property name="suppressAllComments" value="true" />
+ </commentGenerator>
+ 
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        connectionURL="jdbc:mysql://153.36.234.88:3306/smarthome?autoReconnect=true&amp;zeroDateTimeBehavior=convertToNull"
+        userId="vbox"
+        password="XH3vEyhU74A7g5IWz">
+    </jdbcConnection>
+
+    <javaTypeResolver >
+      <property name="forceBigDecimals" value="false" />
+    </javaTypeResolver>
+ 
+ <!-- targetProject:自动生成代码的位置 -->
+    <javaModelGenerator targetPackage="com.ll.nimitz.flow.smarthome.dbsmarthome.domain" targetProject="C:\opt\mybatistools\sourcecode\smarthomeflow\src">
+      <property name="enableSubPackages" value="true" />
+      <property name="trimStrings" value="true" />
+    </javaModelGenerator>
+
+    <sqlMapGenerator targetPackage="mybatis.mapper.smarthome"  targetProject="C:\opt\mybatistools\sourcecode\smarthomeflow\resources">
+      <property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.ll.nimitz.flow.smarthome.dbsmarthome.dao"  targetProject="C:\opt\mybatistools\sourcecode\smarthomeflow\src">
+      <property name="enableSubPackages" value="true" />
+    </javaClientGenerator>
+ 
+ <!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名 -->
+    <table schema="smarthome" tableName="brand" domainObjectName="Brand"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="smarthome" tableName="category_attr_action" domainObjectName="CategoryAttrAction"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="smarthome" tableName="category_attr_map" domainObjectName="CategoryAttrMap"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="smarthome" tableName="category_attr_value" domainObjectName="CategoryAttrValue"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="smarthome" tableName="category_attr_say_demos" domainObjectName="CategoryAttrSayDemos"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="smarthome" tableName="attr_action_map" domainObjectName="AttrActionMap"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="smarthome" tableName="product" domainObjectName="Product"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="smarthome" tableName="product_category" domainObjectName="ProductCategory"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="smarthome" tableName="product_ability" domainObjectName="ProductAbility"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="smarthome" tableName="product_category_attr" domainObjectName="ProductCategoryAttr"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="smarthome" tableName="third_product_category" domainObjectName="ThirdProductCategory"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="smarthome" tableName="third_category_attr" domainObjectName="ThirdCategoryAttr"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="smarthome" tableName="third_category_attr_value" domainObjectName="ThirdCategoryAttrValue"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="smarthome" tableName="third_attr_action" domainObjectName="ThirdAttrAction"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	
+	
+	<!--
+	<table schema="luyou" tableName="user_info_hx" domainObjectName="UserInfoHX" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="luyou" tableName="user_add_invite" domainObjectName="UserAddInvite"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="luyou" tableName="user_group_info" domainObjectName="UserGroupInfo"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="luyou" tableName="user_group_members" domainObjectName="UserGroupMember"  enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+	<table schema="luyou" tableName="user_relations" domainObjectName="UserRelations" />
+	<table schema="luyou" tableName="provider_campaign_info" domainObjectName="ProviderCampaignInfoMBEnatity" />
+	<table schema="luyou" tableName="provider_info" domainObjectName="ProviderInfoMBEnatity" />
+	<table schema="luyou" tableName="user_account" domainObjectName="UserAccountMBEnatity" />
+	<table schema="luyou" tableName="user_act_log" domainObjectName="UserActLogMBEnatity" />
+	<table schema="luyou" tableName="user_info" domainObjectName="UserInfoMBEnatity" />
+	<table schema="luyou" tableName="user_invite" domainObjectName="UserInviteMBEnatity" />
+	<table schema="luyou" tableName="user_points" domainObjectName="UserPointsMBEnatity" />
+	<table schema="luyou" tableName="user_points_log" domainObjectName="UserPointsLogMBEnatity" />
+	<table schema="luyou" tableName="user_relations" domainObjectName="UserRelationsMBEnatity" />
+	<table schema="luyou" tableName="user_sig" domainObjectName="UserSigMBEnatity" />
+	-->
+  </context>
+  <!-- java -jar D:\worker\tools\mybatis-generator-core-1.3.1-bundle\mybatis-generator-core-1.3.1\lib\mybatis-generator-core-1.3.1.jar -configfile D:\worker\tools\mybatis-generator-core-1.3.1-bundle\mybatis-generator-core-1.3.1\kubang\kubang.xml -overwrite -->
+</generatorConfiguration>

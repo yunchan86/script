@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+ <!-- classPathEntry:数据库的JDBC驱动 -->
+  <classPathEntry location="D:\worker\tools\mybatis-generator-core-1.3.1-bundle\mybatis-generator-core-1.3.1\kubang\mysql-connector-java-5.1.15-bin.jar" />
+ 
+  <context id="DB2Tables" targetRuntime="MyBatis3">
+ <!-- 去除自动生成的注释 -->
+ <commentGenerator>
+   <property name="suppressAllComments" value="true" />
+ </commentGenerator>
+ 
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        connectionURL="jdbc:mysql://10.0.0.68:3306/kubang?autoReconnect=true&amp;zeroDateTimeBehavior=convertToNull"
+        userId="root"
+        password="lsz.8908">
+    </jdbcConnection>
+
+    <javaTypeResolver >
+      <property name="forceBigDecimals" value="false" />
+    </javaTypeResolver>
+ 
+ <!-- targetProject:自动生成代码的位置 -->
+    <javaModelGenerator targetPackage="com.yacol.mybatis.beans" targetProject="D:\worker\tools\mybatis-generator-core-1.3.1-bundle\mybatis-generator-core-1.3.1\kubang\src">
+      <property name="enableSubPackages" value="true" />
+      <property name="trimStrings" value="true" />
+    </javaModelGenerator>
+
+    <sqlMapGenerator targetPackage="com.yacol.mybatis.mapper"  targetProject="D:\worker\tools\mybatis-generator-core-1.3.1-bundle\mybatis-generator-core-1.3.1\kubang\src">
+      <property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.yacol.mybatis.mapper"  targetProject="D:\worker\tools\mybatis-generator-core-1.3.1-bundle\mybatis-generator-core-1.3.1\kubang\src">
+      <property name="enableSubPackages" value="true" />
+    </javaClientGenerator>
+ 
+ <!-- tableName:用于自动生成代码的数据库表；domainObjectName:对应于数据库表的javaBean类名 -->
+    
+	<table schema="kubang" tableName="kb_table_info" domainObjectName="KbTableInfoMBEnatity" />
+	<!--
+	<table schema="kubang" tableName="account_auth_log" domainObjectName="AccountAuthLogMBEnatity" />
+	<table schema="kubang" tableName="kb_table_post" domainObjectName="KbTablePostMBEnatity" />
+	<table schema="kubang" tableName="kb_table_rule" domainObjectName="KbTableRuleMBEnatity" />
+	<table schema="kubang" tableName="kb_table_user" domainObjectName="KbTableUserMBEnatity" />
+	<table schema="kubang" tableName="provider_campaign_info" domainObjectName="ProviderCampaignInfoMBEnatity" />
+	<table schema="kubang" tableName="provider_info" domainObjectName="ProviderInfoMBEnatity" />
+	<table schema="kubang" tableName="user_account" domainObjectName="UserAccountMBEnatity" />
+	<table schema="kubang" tableName="user_act_log" domainObjectName="UserActLogMBEnatity" />
+	<table schema="kubang" tableName="user_info" domainObjectName="UserInfoMBEnatity" />
+	<table schema="kubang" tableName="user_invite" domainObjectName="UserInviteMBEnatity" />
+	<table schema="kubang" tableName="user_points" domainObjectName="UserPointsMBEnatity" />
+	<table schema="kubang" tableName="user_points_log" domainObjectName="UserPointsLogMBEnatity" />
+	<table schema="kubang" tableName="user_relations" domainObjectName="UserRelationsMBEnatity" />
+	<table schema="kubang" tableName="user_sig" domainObjectName="UserSigMBEnatity" />
+	-->
+  </context>
+  <!-- java -jar D:\worker\tools\mybatis-generator-core-1.3.1-bundle\mybatis-generator-core-1.3.1\lib\mybatis-generator-core-1.3.1.jar -configfile D:\worker\tools\mybatis-generator-core-1.3.1-bundle\mybatis-generator-core-1.3.1\kubang\kubang.xml -overwrite -->
+</generatorConfiguration>
