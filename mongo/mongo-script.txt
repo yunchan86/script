@@ -1,3 +1,6 @@
 ./mongoimport  -h 127.0.0.1  -d vbox_user -c jd_pro_cate_instruction --type=json  --upsert  --file=/work/admin/data/mongodata/importdata/jd_pro_cate_instruction.json ;
 ./mongoimport  -h 127.0.0.1  -d vbox_user -c jd_product_info --type=json  --upsert  --file=/work/admin/data/mongodata/importdata/jd_product_info.json ;
 ./mongoimport  -h 127.0.0.1  -d vbox_user -c jd_user_and_device --type=json  --upsert  --file=/work/admin/data/mongodata/importdata/jd_user_and_device.json ;
+
+
+./mongoexport -h 127.0.0.1 --port 27017 -d vbox_rcu -c rcu_and_hotel -q '{"rcu_id":"115"}' -o rcu_and_hotel_json.txt --type json
