@@ -27,8 +27,9 @@ connectors与tasks 关系如下：
 
         如何将数据复制到Kafka或从Kafka复制数据的实现 。Task是Connect数据模型中的主要处理数据的角色。每个connector实例协调一组实际复制数据的task。通过允许connector将单个作业分解为多个task，Kafka Connect提供了内置的对并行性和可伸缩数据复制的支持，只需很少的配置。这些任务没有存储任何状态。任务状态存储在Kafka中的特殊主题config.storage.topic和status.storage.topic中。因此，可以在任何时候启动、停止或重新启动任务，以提供弹性的、可伸缩的数据管道。
 
-        
-         ![alt](kafka-connect-04.png)                                                                                     
+    
+    ​    ![alt](kafka-connect-04.png) 
+                                                                                             
         
           当connector首次提交到集群时，workers会重新平衡集群中的所有connector及其tasks，以便每个worker的工作量大致相同。当connector增加或减少它们所需的task数量，或者更改connector的配置时，也会使用相同的重新平衡过程。当一个worker失败时，task在活动的worker之间重新平衡。当一个task失败时，不会触发再平衡，因为task失败被认为是一个例外情况。因此，失败的task不会被框架自动重新启动，应该通过REST API重新启动。
 
@@ -52,7 +53,7 @@ curl -X POST -H "Content-Type: application/json" --data '{"name": "local-file-si
 
 4. Converters
 
-         ​		用于在Connect和外部系统发送或接收数据之间转换数据的代码，在向Kafka写入或从Kafka读取数据时，Converter是使Kafka Connect支持特定数据格式所必需的。task使用转换器将数据格式从字节更改为连接内部数据格式，反之亦然。
+         		用于在Connect和外部系统发送或接收数据之间转换数据的代码，在向Kafka写入或从Kafka读取数据时，Converter是使Kafka Connect支持特定数据格式所必需的。task使用转换器将数据格式从字节更改为连接内部数据格式，反之亦然。
 
 ![alt](kafka-connect-07.png)
 
@@ -70,9 +71,9 @@ curl -X POST -H "Content-Type: application/json" --data '{"name": "local-file-si
 
               更改由连接器生成或发送到连接器的每个消息的简单逻辑,Connector可以配置转换，以便对单个消息进行简单且轻量的修改。这对于小数据的调整和事件路由十分方便，且可以在connector配置中将多个转换链接在一起。然而，应用于多个消息的更复杂的转换最好使用KSQL和Kafka Stream实现。
               
-              ![alt](kafka-connect-08.png)
+              
 
- 
+ ![alt](kafka-connect-08.png)
 
 | Connectors           | References                                                   |
 | -------------------- | ------------------------------------------------------------ |
