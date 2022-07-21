@@ -1,0 +1,1 @@
+nohup ./sbin/start-datanode.sh  &

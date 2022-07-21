@@ -1,0 +1,19 @@
+FROM openjdk:11-jre-slim
+
+#RUN apt update \
+#ADD apache-iotdb-0.14.0-SNAPSHOT-confignode-bin.zip  /
+ADD ./apache-iotdb-0.14.0-SNAPSHOT-confignode-bin  /apache-iotdb-0.14.0-SNAPSHOT-confignode-bin
+RUN apt update \
+  && apt install wget unzip lsof procps -y \
+  && mkdir -p /opt/iotdb-docker \
+  && mv /apache-iotdb-*  /opt/iotdb-docker/confignode
+#  && apt autoremove -y \
+#  && apt purge --auto-remove -y \
+# && apt clean -y \
+
+EXPOSE 22277
+EXPOSE 22278
+VOLUME /opt/iotdb-docker/confignode/data
+VOLUME /opt/iotdb-docker/confignode/logs
+ENV PATH="/opt/iotdb-docker/confignode/sbin/:/iotdb-docker/confignode/tools/:${PATH}"
+ENTRYPOINT ["/opt/iotdb-docker/confignode/sbin/start-confignode.sh"]

@@ -1,0 +1,1 @@
+m -rf  data/  ext/  logs/  nohup.out

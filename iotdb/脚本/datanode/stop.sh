@@ -1,0 +1,1 @@
+./sbin/stop-datanode.sh

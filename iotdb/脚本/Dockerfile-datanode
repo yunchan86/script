@@ -1,0 +1,23 @@
+FROM openjdk:11-jre-slim
+
+#RUN apt update \
+#ADD apache-iotdb-0.14.0-SNAPSHOT-datanode-bin.zip  /
+ADD ./apache-iotdb-0.14.0-SNAPSHOT-server-bin  /apache-iotdb-0.14.0-SNAPSHOT-server-bin
+RUN apt update \
+  && apt install wget unzip lsof procps -y \
+  && mkdir -p /opt/iotdb-docker \
+  && mv /apache-iotdb-*  /opt/iotdb-docker/datanode \
+  && apt autoremove -y \
+  && apt purge --auto-remove -y \
+  && apt clean -y \
+  && sed -i '/^target_config_nodes=127.0.0.1:22277/target_config_nodes=172.16.0.41:22277' /opt/iotdb-docker/datanode/conf/iotdb-datanode.properties
+
+EXPOSE 6667
+EXPOSE 9003
+EXPOSE 40010
+EXPOSE 50010
+VOLUME /opt/iotdb-docker/datanode/data
+VOLUME /opt/iotdb-docker/datanode/logs
+VOLUME /opt/iotdb-docker/datanode/conf
+ENV PATH="/opt/iotdb-docker/datanode/sbin/:/iotdb-docker/datanode/tools/:${PATH}"
+ENTRYPOINT ["/opt/iotdb-docker/datanode/sbin/start-datanode.sh"]

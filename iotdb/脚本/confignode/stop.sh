@@ -1,0 +1,1 @@
+./sbin/stop-confignode.sh
